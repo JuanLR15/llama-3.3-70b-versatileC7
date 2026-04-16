@@ -1,0 +1,27 @@
+Guía de Usuario:
+Chatbot UCLA LLMProyecto:
+Primer Proyecto Corto (10%) 
+Materia: Lenguajes de Programación (C7) 
+
+1. Introducción.
+Este programa es una herramienta de consola desarrollada en Python que permite interactuar con el modelo de inteligencia artificial llama-3.3-70b-versatile. 
+Su función principal es enviar mensajes de texto (prompts) y recibir respuestas coherentes en tiempo real.
+
+2. Requisitos Previos.
+Para que el programa funcione correctamente en su equipo, debe contar con:
+Python 3.x: Instalado y configurado en las variables de entorno.
+Librería Groq: Instalada mediante el comando pip install groq.
+Conexión a Internet: Necesaria para comunicarse con los servidores del LLM.
+API Key: Una clave válida de Groq configurada en el código fuente.
+
+3. Instrucciones de Uso.
+Siga estos pasos para interactuar con la IA:
+Ejecución: Abra una terminal en la carpeta del proyecto y ejecute el comando: python main.py
+Ingreso de Prompt: Cuando aparezca la etiqueta Usuario:, escriba cualquier pregunta, comando o mensaje que desee consultar.
+Procesamiento: El programa enviará su mensaje al modelo. Verá una breve pausa mientras el LLM genera la respuesta.
+Lectura: La respuesta aparecerá bajo la etiqueta LLM:. El texto se mostrará de forma clara y legible.
+
+4. Solución de Problemas Comunes.
+Error de Conexión: Verifique su acceso a internet o la validez de la API Key.
+Error de Librería: Si el sistema indica que el módulo no existe, repita la instalación de groq.
+Respuesta Lenta: Depende de la carga de tráfico del modelo llama-3.3-70b-versatile.
