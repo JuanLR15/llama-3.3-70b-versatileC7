@@ -1,0 +1,29 @@
+Informe Técnico: 
+Implementación de Interfaz de Lenguaje Natural (LLM).
+Para: Prof. Juan Salas
+De: Juan Lucena(31558382) Gabriel Primera (31544391)
+Fecha: 16 de abril de 2026
+Asunto: Desarrollo del Primer Proyecto Corto – Integración con Llama-3.31.
+
+Introducción:
+El presente informe detalla el desarrollo de un programa en lenguaje Python diseñado para actuar como puente entre un usuario final y el modelo de lenguaje de gran escala (LLM) llama-3.3-70b-versatile. 
+El objetivo principal fue cumplir con el ciclo de vida de una petición: captura de datos, procesamiento mediante API y visualización de resultados.
+
+2. Descripción de la Solución.
+Para la implementación se utilizó la infraestructura de Groq, la cual permite una conexión de baja latencia con el modelo requerido. El flujo lógico del programa se divide en:
+Entrada de datos: Captura del string (prompt) a través de la función estándar input() de Python.
+Capa de Comunicación: Uso de una clave de API segura para autenticar la petición ante los servidores del LLM.
+Procesamiento: El modelo procesa el lenguaje natural y devuelve una estructura de datos (JSON) que contiene la respuesta generada.
+
+3. Diagrama de SecuenciaDe acuerdo con las instrucciones, a continuación se representa el funcionamiento lógico del sistema:
+Usuario > Programa: Ingresa mensaje (Prompt).
+Programa > API Groq: Envía solicitud HTTP con el contenido del mensaje.
+API Groq > Llama-3.3: El modelo interpreta y genera el texto de salida.
+Llama-3.3 > API Groq: Retorna el mensaje procesado.
+API Groq > Programa: Entrega la respuesta al script de Python.
+Programa > Usuario: Muestra el resultado final por consola.
+
+4. Conclusiones.
+El desarrollo del programa demostró la versatilidad de Python para la integración de servicios de inteligencia artificial. 
+Se logró una ejecución fluida que cumple con la secuencia básica establecida en las indicaciones del proyecto. El código fuente se encuentra disponible en el repositorio Git 
+público adjunto para su revisión técnica.
