@@ -20,7 +20,7 @@ def chat():
                 {"role": "system", "content": "Responde siempre en español de forma clara y concisa."},
                 {"role": "user", "content": user_input}
             ],
-            temperature=0.7,
+            temperature=1.0,
         )
         respuesta = completion.choices[0].message.content
         return jsonify({"response": respuesta})
